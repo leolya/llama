@@ -64,36 +64,60 @@ def main(ckpt_dir: str, tokenizer_path: str, temperature: float = 0.8, top_p: fl
     # prompts = ["The capital of Germany is the city of", "Here is my sonnet in the style of Shakespeare about an artificial intelligence:"]
     prompts = [
 """
-hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis\n
-reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis\n
-hypothesis: ah we are about to go back to shooting on wednesday we got we got shut down for a kobid ah alert\n
-reference: ah we are about to go back to shooting on wednesday we got we got shutdown for a ah covid ah alert\n
-hypothesis: happen'nt and he's going to test positive forks\n
-reference: happening and he's gonna test positive for covid\n
-hypothesis: and i'll walk out without my mask on and just wave and once again scream out i've had covading i'm over your bull ships it was three days light diary i don't care just shut the falck up about covet\n
+hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis
+reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis
+hypothesis: ah we are about to go back to shooting on wednesday we got we got shut down for a kobid ah alert
+reference: ah we are about to go back to shooting on wednesday we got we got shutdown for a ah covid ah alert
+hypothesis: happen'nt and he's going to test positive forks
+reference: happening and he's gonna test positive for covid
+hypothesis: and i'll walk out without my mask on and just wave and once again scream out i've had covading i'm over your bull ships it was three days light diary i don't care just shut the falck up about covet
 reference:""",
 """
-hypothesis: do you know how goggles using all the information he collects on you\n
-reference: do you know how google is using all the information it collects on you\n
-hypothesis: govil discovered a cibar attack on their systems\n
-reference: google discovered a cyber attack on their systems\n
-hypothesis: tell her what do you think when you go yourself\n
-reference: taylor what do you think when you google yourself\n
-hypothesis: gouged out org its philanthropic arm has contributed over one hundred million dollars to various organizations from clean energy to globule health\n
+hypothesis: do you know how goggles using all the information he collects on you
+reference: do you know how google is using all the information it collects on you
+hypothesis: govil discovered a cibar attack on their systems
+reference: google discovered a cyber attack on their systems
+hypothesis: tell her what do you think when you go yourself
+reference: taylor what do you think when you google yourself
+hypothesis: gouged out org its philanthropic arm has contributed over one hundred million dollars to various organizations from clean energy to globule health
 reference:""",
 """
-hypothesis: by implementing so far programs for validation verification consequents in a novel interstructure called the box\n
-reference: by implementing software programs for validation verification consensus in a novel infrastructure called the blockchain\n
-hypothesis: but even when we have the hardware we still need to learn how to use the hardware with the right soft wear\n
-reference: but even when we have the hardware we still need to learn how to use the hardware with the right software\n
-hypothesis: so first of all the desport that looks like this you can see an over view of how many things you have running at the moment inside the sofa of course\n
-reference: so first of all the dashboard that looks like this you can see an overview of how many things you have running at the moment inside the software of course\n
-hypothesis: anna was very good at managing processes but there wasn't much use a level soft air\n
+hypothesis: by implementing so far programs for validation verification consequents in a novel interstructure called the box
+reference: by implementing software programs for validation verification consensus in a novel infrastructure called the blockchain
+hypothesis: but even when we have the hardware we still need to learn how to use the hardware with the right soft wear
+reference: but even when we have the hardware we still need to learn how to use the hardware with the right software
+hypothesis: so first of all the desport that looks like this you can see an over view of how many things you have running at the moment inside the sofa of course
+reference: so first of all the dashboard that looks like this you can see an overview of how many things you have running at the moment inside the software of course
+hypothesis: anna was very good at managing processes but there wasn't much use a level soft air
+reference:""",
+"""
+word: covid
+hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis
+reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis
+word: covid
+hypothesis: ah we are about to go back to shooting on wednesday we got we got shut down for a kobid ah alert
+reference: ah we are about to go back to shooting on wednesday we got we got shutdown for a ah covid ah alert
+word: google
+hypothesis: do you know how goggles using all the information he collects on you
+reference: do you know how google is using all the information it collects on you
+word: google
+hypothesis: govil discovered a cibar attack on their systems
+reference: google discovered a cyber attack on their systems
+word: software
+hypothesis: by implementing so far programs for validation verification consequents in a novel interstructure called the box
+reference: by implementing software programs for validation verification consensus in a novel infrastructure called the blockchain
+word: software
+hypothesis: but even when we have the hardware we still need to learn how to use the hardware with the right soft wear
+reference: but even when we have the hardware we still need to learn how to use the hardware with the right software
+word: youtube
+hypothesis: ah wouldn't be free but it'd be a small fee on you to you put it behind a pay wall on you two
 reference:"""]
+
 
 # and then i walk out without my mask on and just wave and once again scream out i've had covid i'd ah i'm over your bullshit it was three days like diarrhea i don't care just shut the fuck up about covid
 # google dot org its philanthropic arm has contributed over one hundred million dollars to various organizations from clean energy to global health\n
 # sand it was very good at managing processes but there wasn't much user level software
+# but i wouldn't be free but it will be a small fee on youtube you put it behind a paywall on youtube
 
 
 
