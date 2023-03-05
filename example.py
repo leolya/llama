@@ -69,6 +69,8 @@ reference: oh and did i say that this is a set created by the covid crisis actua
 hypothesis: ah we are about to go back to shooting on wednesday we got we got shut down for a kobid ah alert\n
 reference: ah we are about to go back to shooting on wednesday we got we got shutdown for a ah covid ah alert\n
 hypothesis: happen'nt and he's going to test positive forks\n
+reference: happening and he's gonna test positive for covid\n
+hypothesis: and i'll walk out without my mask on and just wave and once again scream out i've had covading i'm over your bull ships it was three days light diary i don't care just shut the falck up about covet\n
 reference:""",
 """
 hypothesis: do you know how goggles using all the information he collects on you\n
@@ -76,32 +78,22 @@ reference: do you know how google is using all the information it collects on yo
 hypothesis: govil discovered a cibar attack on their systems\n
 reference: google discovered a cyber attack on their systems\n
 hypothesis: tell her what do you think when you go yourself\n
+reference: taylor what do you think when you google yourself\n
+hypothesis: gouged out org its philanthropic arm has contributed over one hundred million dollars to various organizations from clean energy to globule health\n
 reference:""",
 """
 hypothesis: by implementing so far programs for validation verification consequents in a novel interstructure called the box\n
 reference: by implementing software programs for validation verification consensus in a novel infrastructure called the blockchain\n
-hypothesis: anna was very good at managing processes but there wasn't much use a level soft air\n
-reference: and it was very good at managing processes but there wasn't much user level software\n
+hypothesis: but even when we have the hardware we still need to learn how to use the hardware with the right soft wear\n
+reference: but even when we have the hardware we still need to learn how to use the hardware with the right software\n
 hypothesis: so first of all the desport that looks like this you can see an over view of how many things you have running at the moment inside the sofa of course\n
-reference:""",
-
-"""
-word: covid\n
-hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis\n
-reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis\n
-word: google\n
-hypothesis: do you know how goggles using all the information he collects on you\n
-reference: do you know how google is using all the information it collects on you\n
-word: software, blockchain\n
-hypothesis: by implementing so far programs for validation verification consequents in a novel interstructure called the box\n
-reference: by implementing software programs for validation verification consensus in a novel infrastructure called the blockchain\n
-word: covid\n
-hypothesis: happen'nt and he's going to test positive forks\n
+reference: so first of all the dashboard that looks like this you can see an overview of how many things you have running at the moment inside the software of course\n
+hypothesis: anna was very good at managing processes but there wasn't much use a level soft air\n
 reference:"""]
 
-# happening and he's gonna test positive for covid
-# taylor what do you think when you google yourself
-# so first of all the dashboard that looks like this you can see an overview of how many things you have running at the moment inside the software of course
+# and then i walk out without my mask on and just wave and once again scream out i've had covid i'd ah i'm over your bullshit it was three days like diarrhea i don't care just shut the fuck up about covid
+# google dot org its philanthropic arm has contributed over one hundred million dollars to various organizations from clean energy to global health\n
+# sand it was very good at managing processes but there wasn't much user level software
 
 
 
