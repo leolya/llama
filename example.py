@@ -63,26 +63,32 @@ def main(ckpt_dir: str, tokenizer_path: str, temperature: float = 0.8, top_p: fl
     generator = load(ckpt_dir, tokenizer_path, local_rank, world_size)
     # prompts = ["The capital of Germany is the city of", "Here is my sonnet in the style of Shakespeare about an artificial intelligence:"]
     prompts = [
-    """
-    hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis\n
-    reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis\n
-    hypothesis: ah we are about to go back to shooting on wednesday we got we got shut down for a kobid ah alert\n
-    reference: ah we are about to go back to shooting on wednesday we got we got shutdown for a ah covid ah alert\n
-    hypothesis: happen'nt and he's going to test positive forks\n
-    reference:
-    """,
-    """
-    hypothesis: do you know how goggles using all the information he collects on you\n
-    reference: do you know how google is using all the information it collects on you\n
-    hypothesis: govil discovered a cibar attack on their systems\n
-    reference: google discovered a cyber attack on their systems\n
-    hypothesis: tell her what do you think when you go yourself\n
-    reference:
-    """]
+"""
+hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis\n
+reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis\n
+hypothesis: ah we are about to go back to shooting on wednesday we got we got shut down for a kobid ah alert\n
+reference: ah we are about to go back to shooting on wednesday we got we got shutdown for a ah covid ah alert\n
+hypothesis: happen'nt and he's going to test positive forks\n
+reference:""",
+"""
+hypothesis: do you know how goggles using all the information he collects on you\n
+reference: do you know how google is using all the information it collects on you\n
+hypothesis: govil discovered a cibar attack on their systems\n
+reference: google discovered a cyber attack on their systems\n
+hypothesis: tell her what do you think when you go yourself\n
+reference:""",
+"""
+hypothesis: by implementing so far programs for validation verification consequents in a novel interstructure called the box\n
+reference: by implementing software programs for validation verification consensus in a novel infrastructure called the blockchain\n
+hypothesis: anna was very good at managing processes but there wasn't much use a level soft air\n
+reference: and it was very good at managing processes but there wasn't much user level software\n
+hypothesis: so first of all the desport that looks like this you can see an over view of how many things you have running at the moment inside the sofa of course\n
+reference:"""]
 
 # happening and he's gonna test positive for covid
-
 # taylor what do you think when you google yourself
+# so first of all the dashboard that looks like this you can see an overview of how many things you have running at the moment inside the software of course
+
 
 
     results = generator.generate(prompts, max_gen_len=256, temperature=temperature, top_p=top_p)
