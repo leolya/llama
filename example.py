@@ -83,6 +83,20 @@ reference: by implementing software programs for validation verification consens
 hypothesis: anna was very good at managing processes but there wasn't much use a level soft air\n
 reference: and it was very good at managing processes but there wasn't much user level software\n
 hypothesis: so first of all the desport that looks like this you can see an over view of how many things you have running at the moment inside the sofa of course\n
+reference:""",
+
+"""
+word: covid\n
+hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis\n
+reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis\n
+word: google\n
+hypothesis: do you know how goggles using all the information he collects on you\n
+reference: do you know how google is using all the information it collects on you\n
+word: software, blockchain\n
+hypothesis: by implementing so far programs for validation verification consequents in a novel interstructure called the box\n
+reference: by implementing software programs for validation verification consensus in a novel infrastructure called the blockchain\n
+word: covid\n
+hypothesis: happen'nt and he's going to test positive forks\n
 reference:"""]
 
 # happening and he's gonna test positive for covid
