@@ -61,8 +61,16 @@ def main(ckpt_dir: str, tokenizer_path: str, temperature: float = 0.8, top_p: fl
         sys.stdout = open(os.devnull, 'w')
 
     generator = load(ckpt_dir, tokenizer_path, local_rank, world_size)
-    prompts = ["The capital of Germany is the city of", "Here is my sonnet in the style of Shakespeare about an artificial intelligence:"]
+    # prompts = ["The capital of Germany is the city of", "Here is my sonnet in the style of Shakespeare about an artificial intelligence:"]
+    prompts = ["""unknown word: covid\n
+    hypothesis: when did i say that this was said created by the culprit crisis these articles that publish are well before the culver crisis\n
+    reference: oh and did i say that this is a set created by the covid crisis actually these articles have published ah well before the covid crisis\n
+    hypothesis: ah we are about to go back to shooting on wednesday we got we got shut down for a kobid ah alert\n
+    reference:"""]
+
     results = generator.generate(prompts, max_gen_len=256, temperature=temperature, top_p=top_p)
+
+# ah we are about to go back to shooting on wednesday we got we got shutdown for a ah covid ah alert
 
     for result in results:
         print(result)
