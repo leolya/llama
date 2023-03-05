@@ -21,6 +21,7 @@ Edit the `download.sh` script with the signed url provided in the email to downl
 The provided `example.py` can be run on a single or multi-gpu node with `torchrun` and will output completions for two pre-defined prompts. Using `TARGET_FOLDER` as defined in `download.sh`:
 ```
 torchrun --nproc_per_node MP example.py --ckpt_dir $TARGET_FOLDER/model_size --tokenizer_path $TARGET_FOLDER/tokenizer.model
+python -m torch.distributed.launch --nproc_per_node 4 example.py --ckpt_dir /datablob/v-yuangli/llama/30B --tokenizer_path /datablob/v-yuangli/llama/tokenizer.model
 ```
 
 Different models require different MP values:
