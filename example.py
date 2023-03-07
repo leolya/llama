@@ -119,15 +119,15 @@ reference:"""]
 # sand it was very good at managing processes but there wasn't much user level software
 # but i wouldn't be free but it will be a small fee on youtube you put it behind a paywall on youtube
 
-
-
-    results = generator.generate(prompts, max_gen_len=256, temperature=temperature, top_p=top_p)
-
-
-
-    for result in results:
-        print(result)
+    for p in prompts:
+        l = len(generator.tokenizer.encode(p.split(":")[-2].split("reference")[0][1:], bos=False, eos=False))
+        results = generator.generate([p], max_gen_len=l + 5, temperature=temperature, top_p=top_p)
+        print(results[0])
         print("\n==================================\n")
+
+    # for result in results:
+    #     print(result)
+    #     print("\n==================================\n")
 
 
 if __name__ == "__main__":
